@@ -1,0 +1,49 @@
+body {
+    background-image: url('../img/fundo_stardew.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+
+}
+
+.stardew_valley_logo{
+    width: 25%;
+    right: -32%;
+    position: relative;
+    top: 0;
+}
+
+
+footer {
+    position: relative;
+    height: 100px;
+}
+
+.image-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+
+}
+
+.legal-info {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    right: 12%;
+    background: linear-gradient(rgba(255, 253, 253, 0.212), rgba(255, 253, 253, 0.212));
+    border-radius: 10px;
+    
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
