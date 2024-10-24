@@ -1,14 +1,6 @@
-const container = document.querySelector('.container');
-let scrollAmount = 0;
-let scrollMax = container.scrollWidth - container.clientWidth;
-let direction = 1; 
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
-function autoScroll() {
-    container.scrollLeft += direction * 5; 
-    scrollAmount += direction * 5;
-    if (scrollAmount >= scrollMax || scrollAmount <= 0) {
-        direction *= -1; 
-}
-
-setInterval(autoScroll, 50);
-}
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
